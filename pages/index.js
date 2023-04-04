@@ -13,7 +13,7 @@ const HomePage = () => {
   const handleChange = (event) => {
     const { value } = event.target;
     setSelectedWeek(value);
-    router.push(`/week/${value}`);
+    router.push(`/${value}`);
   };
 
   return (
