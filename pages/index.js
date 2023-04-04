@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <select value={selectedWeek} onChange={handleChange}>
+      <select id="dropdown" value={selectedWeek} onChange={handleChange}>
         <option value="1">Week 1</option>
         <option value="2">Week 2</option>
         <option value="3">Week 3</option>

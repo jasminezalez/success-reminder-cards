@@ -3,7 +3,7 @@ import { join } from 'path';
 
 const WeekPage = ({ week, title, bulk, closing }) => {
   return (
-    <div>
+    <div id="card-container">
       <h1>Week {week} Success Reminder Card</h1>
       <p> {title} </p>
       <p> {bulk} </p>
