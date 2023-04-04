@@ -1,13 +1,15 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync } from "fs";
+import { join } from "path";
 
 const WeekPage = ({ week, title, bulk, closing }) => {
   return (
     <div id="card-container">
-      <h1>Week {week} Success Reminder Card</h1>
-      <p> {title} </p>
-      <p> {bulk} </p>
-      <p> {closing} </p>
+        <div id="card-content">
+        <h1>Week {week} Success Reminder Card</h1>
+        <p> {title} </p>
+        <p> {bulk} </p>
+        <p> {closing} </p>
+        </div>
     </div>
   );
 };
@@ -15,7 +17,7 @@ const WeekPage = ({ week, title, bulk, closing }) => {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { week: "1"} },
+      { params: { week: "1" } },
       { params: { week: "2" } },
       { params: { week: "3" } },
       { params: { week: "4" } },
@@ -33,18 +35,18 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const filePath = join(process.cwd(), 'data', 'weeks.json');
-    const fileContents = readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
-  
-    return {
-      props: {
-        week: params.week,
-        title: data[params.week].title,
-        bulk: data[params.week].bulk,
-        closing: data[params.week].closing,
-      },
-    };
-  }
+  const filePath = join(process.cwd(), "data", "weeks.json");
+  const fileContents = readFileSync(filePath, "utf8");
+  const data = JSON.parse(fileContents);
+
+  return {
+    props: {
+      week: params.week,
+      title: data[params.week].title,
+      bulk: data[params.week].bulk,
+      closing: data[params.week].closing,
+    },
+  };
+}
 
 export default WeekPage;

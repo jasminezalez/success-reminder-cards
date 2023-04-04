@@ -1,12 +1,14 @@
 /* Set the background color of the body */
 body {
   background-color: #f7fafc;
+  font-weight: 400
 }
 
 /* Set the font family and size for the body text */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 1.5
 }
 
 /* Add some padding to the container */
@@ -22,8 +24,8 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #2d3748;
+  font-weight: 700;
+  color: white;
 }
 
 /* Add some margin to the bottom of the headings */
@@ -38,14 +40,14 @@ h6 {
 
 /* Style the links */
 a {
-  color: #3182ce;
+  color: brown;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 /* Change the link color on hover */
 a:hover {
-  color: #2c5282;
+  color: brown;
 }
 
 /* Add some padding and border to the input fields */
@@ -59,11 +61,14 @@ input {
 
 /* Change the border color on focus */
 input:focus {
-  border-color: #63b3ed;
+  border-color: brown;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 #card-container {
+  background-image: url("https://source.unsplash.com/LGD8eV8ar4E");
+  background-size: cover;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,9 +76,34 @@ input:focus {
   height: 100vh;
 }
 
+#card-content {
+  background-color: rgba(92, 58, 9, 0.368);
+  padding: 2rem;
+  text-align: center;
+}
+
+#card-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#card-content p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
 #dropdown {
   font: 1.5rem 'Roboto', sans-serif;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+}
+
+#title {
+  font: 2rem 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  color: white;
 }
