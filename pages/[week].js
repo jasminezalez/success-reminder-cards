@@ -9,7 +9,7 @@ const WeekPage = ({ week, title, bulk, closing }) => {
        <div id="card-container">
         <div id="card-content">
         <div id="card-content">
-        <h1>Week {week} Success Reminder Card</h1>
+        <h1>Rule {week} Success Reminder Card</h1>
         <p> {title} </p>
         <p> {bulk} </p>
         <p> {closing} </p>
