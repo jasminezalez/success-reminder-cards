@@ -114,9 +114,21 @@ input:focus {
 }
 
 /* Tablets and smaller laptops (portrait and landscape) */
-@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
-  /* CSS rules for tablets go here */
+/* Tablets and smaller laptops (portrait and landscape) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #card-content {
+    padding: 1.5rem;
+  }
+
+  #card-content h1 {
+    font-size: 2rem;
+  }
+
+  #card-content p {
+    font-size: 1rem;
+  }
 }
+
 
 /* Desktop and larger laptops (landscape) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
