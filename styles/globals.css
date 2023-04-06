@@ -114,6 +114,7 @@ input:focus {
 }
 
 /* Tablets and smaller laptops (portrait and landscape) */
+
 /* Tablets and smaller laptops (portrait and landscape) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #card-content {
@@ -121,11 +122,11 @@ input:focus {
   }
 
   #card-content h1 {
-    font-size: 2rem;
+    font-size: 14pt;
   }
 
   #card-content p {
-    font-size: 1rem;
+    font-size: 11pt;
   }
 }
 
