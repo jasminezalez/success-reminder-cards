@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: white;
 }
@@ -84,7 +84,7 @@ input:focus {
 
 #card-content h1 {
   color: white;
-  font-size: 2.5rem;
+  font: 2.5rem 'Roboto', sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -97,13 +97,14 @@ input:focus {
 }
 #dropdown {
   font: 1.5rem 'Roboto', sans-serif;
-  width: 100%;
+  width: 50%;
   max-width: 400px;
   margin: 0 auto;
+  gap: 1rem;
 }
 
 #title {
-  font: 2rem 'Montserrat', sans-serif;
+  font: 2rem 'Roboto', sans-serif;
   margin-bottom: 1rem;
   color: white;
 }
@@ -118,7 +119,7 @@ input:focus {
 /* Tablets and smaller laptops (portrait and landscape) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #card-content {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   #card-content h1 {
