@@ -1,18 +1,21 @@
 import { readFileSync } from "fs";
 import { join } from "path";
-import HomePage, { Dropdown } from "./index";
+import Navbar from "../components/NavBar";
 
 const WeekPage = ({ week, title, bulk, closing }) => {
   return (
-    <div id="card-container">
-        <Dropdown />
+    <div>
+        <Navbar />
+       <div id="card-container">
         <div id="card-content">
         <h1>Week {week} Success Reminder Card</h1>
         <p> {title} </p>
         <p> {bulk} </p>
         <p> {closing} </p>
         </div>
+    </div> 
     </div>
+    
   );
 };
 
