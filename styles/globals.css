@@ -73,7 +73,8 @@ input:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: calc(100vh - 4rem);
+  padding-top: 1rem;
 }
 
 #card-content {
@@ -111,10 +112,29 @@ input:focus {
 
 /* Mobile devices (portrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* CSS rules for mobile devices go here */
-}
+  #card-content {
+    padding: 1rem;
+  }
 
-/* Tablets and smaller laptops (portrait and landscape) */
+  #card-content h1 {
+    font-size: 14pt;
+  }
+
+  #card-content p {
+    font-size: 11pt;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0; 
+  }
+
+  #card-container {
+    padding-top: 6rem; 
+    overflow: hidden;
+  }
+}
 
 /* Tablets and smaller laptops (portrait and landscape) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -128,6 +148,16 @@ input:focus {
 
   #card-content p {
     font-size: 11pt;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0; 
+  }
+
+  #card-container {
+    padding-top: 10rem; 
   }
 }
 
