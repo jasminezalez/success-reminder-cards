@@ -1,9 +1,11 @@
 import { readFileSync } from "fs";
 import { join } from "path";
+import HomePage, { Dropdown } from "./index";
 
 const WeekPage = ({ week, title, bulk, closing }) => {
   return (
     <div id="card-container">
+        <Dropdown />
         <div id="card-content">
         <h1>Week {week} Success Reminder Card</h1>
         <p> {title} </p>
